@@ -10,7 +10,6 @@ namespace CSharp_Coding_Exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Palindrome.IsPalindrome(121));
         }
     }
 }
