@@ -13,6 +13,7 @@ namespace CSharp_Coding_Exercises
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(CaesarCipher.Rot13("C# is cool! 000"));
             /*
             Book book = new Book("My Book");
             book.AddGrade(89.1);
@@ -38,9 +39,20 @@ namespace CSharp_Coding_Exercises
             //{
             //       Console.Write(item+ " ");
             //}
-            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
-            PhoneNumber.CreatePhoneNumber(nums);
 
+
+            //int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+            //PhoneNumber.CreatePhoneNumber(nums);
+
+
+            ////SPLIT STRING////
+            //string[] vs = SplitString.Solution("abc");
+
+
+            //foreach (var item in vs)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
         }
    //     public static void RemoveDups(int[] nums)
