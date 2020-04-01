@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="ByteArrayEven.cs" />
+    <Compile Include="ExesAndOhs.cs" />
     <Compile Include="LongestPrefix.cs" />
+    <Compile Include="Multiples3and5.cs" />
     <Compile Include="Palindrome.cs" />
     <Compile Include="PhoneNumber.cs" />
     <Compile Include="Program.cs" />
@@ -68,7 +70,7 @@
     <Compile Include="ReverseInt.cs" />
     <Compile Include="StringArrayDiff.cs" />
     <Compile Include="TwoSum.cs" />
-    <Compile Include="ValidParentheses.cs" />
+    <Compile Include="TwoToOne.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
