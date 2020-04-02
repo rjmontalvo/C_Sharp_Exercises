@@ -13,7 +13,17 @@ namespace CSharp_Coding_Exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CaesarCipher.Rot13("C# is cool! 000"));
+            //Console.WriteLine(CaesarCipher.Rot13("C# is cool! 000"));
+
+            //string[] a1 = { "arp", "live", "strong" };
+            //string[] a2 = { "lively", "alive", "harp", "sharp", "armstrong" };
+            //foreach (var word in WhichAreIn.inArray(a1, a2))
+            //    Console.WriteLine(word);
+
+            //Console.WriteLine(BouncingBall.bouncingBall(3, .66, 1.5));
+
+            Console.WriteLine(ValidParentheses.IsValid("]"));
+
             /*
             Book book = new Book("My Book");
             book.AddGrade(89.1);

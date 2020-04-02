@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
+    <Compile Include="BouncingBall.cs" />
     <Compile Include="ByteArrayEven.cs" />
     <Compile Include="CaesarCipher.cs" />
     <Compile Include="ExesAndOhs.cs" />
@@ -69,10 +70,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseInt.cs" />
+    <Compile Include="Sort.cs" />
     <Compile Include="SplitString.cs" />
     <Compile Include="StringArrayDiff.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="TwoToOne.cs" />
+    <Compile Include="ValidParentheses.cs" />
     <Compile Include="WhichAreIn.cs" />
   </ItemGroup>
   <ItemGroup>
