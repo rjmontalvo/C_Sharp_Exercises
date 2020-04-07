@@ -22,7 +22,13 @@ namespace CSharp_Coding_Exercises
 
             //Console.WriteLine(BouncingBall.bouncingBall(3, .66, 1.5));
 
-            Console.WriteLine(ValidParentheses.IsValid("]"));
+            //Console.WriteLine(ValidParentheses.IsValid("]"));
+
+            //string[] myarr = { "NORTH", "WEST", "SOUTH", "EAST" };
+            //foreach (var item in DirReduction.dirReduc(myarr))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             /*
             Book book = new Book("My Book");

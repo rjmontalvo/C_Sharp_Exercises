@@ -62,6 +62,7 @@
     <Compile Include="BouncingBall.cs" />
     <Compile Include="ByteArrayEven.cs" />
     <Compile Include="CaesarCipher.cs" />
+    <Compile Include="DirReduction.cs" />
     <Compile Include="ExesAndOhs.cs" />
     <Compile Include="LongestPrefix.cs" />
     <Compile Include="Multiples3and5.cs" />
