@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using GradeBook;
+using LinkedList;
 
 namespace CSharp_Coding_Exercises
 {
@@ -13,6 +14,21 @@ namespace CSharp_Coding_Exercises
     {
         static void Main(string[] args)
         {
+
+            //Console.WriteLine(SLLtoString.Stringify(new Node(1, new Node(2, new Node(3)))));
+
+            SLinkedList<int> myList = new SLinkedList<int>();
+            myList.Add(10);
+            myList.Add(20);
+            myList.Add(30);
+            myList.Add(40);
+            myList.Append(175);
+            myList.Insert(35, 30);
+
+            Console.WriteLine(myList.ToString());
+            
+            
+
             //Console.WriteLine(CaesarCipher.Rot13("C# is cool! 000"));
 
             //string[] a1 = { "arp", "live", "strong" };
