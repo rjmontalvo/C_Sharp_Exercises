@@ -1,2 +1,3 @@
 # C_Sharp_Exercises
-Repository of solutions to different problems using C#
+This repository contains solutions to coding questions from various websites including Leetcode, CodeWars, and others.
+
