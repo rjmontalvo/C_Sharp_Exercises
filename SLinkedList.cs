@@ -37,6 +37,7 @@ namespace LinkedList
         public void Append(T data)
         {
             Node<T> nodeToAppend = new Node<T>(data);
+
             Node<T> pointer = Head;
 
             while(pointer.Next != null)
@@ -152,6 +153,46 @@ namespace LinkedList
             }
         }
 
+        /// <summary>
+        /// Returns the number of nodes in a list
+        /// </summary>
+        public int Length()
+        {
+            if (Head == null) return 0;
+
+            int count = 0;
+            Node<T> pointer = Head;
+
+            while(pointer != null)
+            {
+                count += 1;
+                pointer = pointer.Next;
+            }
+
+            return count;
+        }
+
+        /// <summary>
+        /// Returns the count of data in the list that meets the criteria specified in the function
+        /// </summary>
+        public int Count(Node<T> head, Predicate<T> func)
+        {
+            if (head == null) return 0;
+           
+            int counter = 0;
+            Node<T> pointer = head;
+
+            while(pointer != null)
+            {
+                if(func(pointer.Data))
+                {
+                    counter += 1;
+                }
+                pointer = pointer.Next;
+            }
+
+            return counter;
+        }
 
         /*****WORKING ON THIS
         public void Reverse()
