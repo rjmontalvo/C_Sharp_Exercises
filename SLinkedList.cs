@@ -118,6 +118,40 @@ namespace LinkedList
             pointer.Next = nodeToAdd;
         }
 
+        /// <summary>
+        ///  Inserts a node into the correct location of a pre-sorted linked list which is sorted in ascending order
+        /// </summary>
+        public void SortedInsert(Node<int> head, int data)
+        {
+            if(head == null)
+            {
+                Node<int> node = new Node<int>(data);
+                head = node;
+            }
+            Node<int> pointer = head;
+            
+            while(pointer != null)
+            {
+                //if the pointer data is less than given data 
+                //and pointer.next data is greater than or null
+                //insert the node
+                if (pointer.Data <= data && pointer.Next == null)
+                {
+                    Node<int> nodeToAdd = new Node<int>(data);
+                    pointer.Next = nodeToAdd;
+                    break;
+                }
+                else if(pointer.Data <= data && pointer.Next.Data >= data)
+                {
+                    Node<int> nodeToAdd = new Node<int>(data, pointer.Next);
+                    pointer.Next = nodeToAdd;
+                    break;
+                }
+                else
+                    pointer = pointer.Next;
+            }
+        }
+
 
         /*****WORKING ON THIS
         public void Reverse()
