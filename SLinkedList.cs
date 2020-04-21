@@ -194,6 +194,38 @@ namespace LinkedList
             return counter;
         }
 
+        /// <summary>
+        /// Returns the node at the given index
+        /// </summary>
+        public Node<T> GetNth(Node<T> node, int index)
+        {
+            if (node == null)
+                throw new ArgumentException();
+
+            var pointer = node;
+            int idx = 0;
+
+            while (true)
+            {
+
+                if (pointer == null)
+                {
+                    throw new ArgumentException();
+                }
+
+                if (idx != index)
+                {
+                    idx++;
+                    pointer = pointer.Next;
+                }
+
+                else
+                    return pointer;
+            }
+
+        }
+
+
         /*****WORKING ON THIS
         public void Reverse()
         {

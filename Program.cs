@@ -30,9 +30,11 @@ namespace CSharp_Coding_Exercises
             myList.Add(3);
             myList.Add(5);
             myList.Add(6);
+
+            Console.WriteLine(myList.GetNth(myList.Head, 100));
             //Console.WriteLine(myList.ToString());
 
-            Console.WriteLine(myList.Count(myList.Head, value => value %2 != 0));
+            //Console.WriteLine(myList.Count(myList.Head, value => value %2 != 0));
 
             //Console.WriteLine(CaesarCipher.Rot13("C# is cool! 000"));
 
