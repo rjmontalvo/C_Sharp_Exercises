@@ -75,6 +75,7 @@
     <Compile Include="Sort.cs" />
     <Compile Include="SplitString.cs" />
     <Compile Include="StringArrayDiff.cs" />
+    <Compile Include="Tree.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="TwoToOne.cs" />
     <Compile Include="ValidParentheses.cs" />

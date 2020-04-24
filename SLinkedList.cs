@@ -225,6 +225,57 @@ namespace LinkedList
 
         }
 
+        /// <summary>
+        /// Inserts a node at a given index
+        /// </summary>
+        public Node<T> InsertAt(Node<T> head, int index, T data)
+        {
+            if ((head == null && index > 0) || (index < 0)) throw new ArgumentOutOfRangeException("Index out of bounds");
+            if (index == 0) return new Node<T>(data, head);
+            head.Next = InsertAt(head.Next, --index, data);
+
+            return head;
+
+            #region Long Way
+            //Node<T> pointer = head;
+            //int count = 1;
+            //Node<T> nodeToAdd = new Node<T>(data);
+
+            //if ((head == null && index > 0) || (index < 0)) throw new ArgumentOutOfRangeException("Index out of bounds");
+
+            ////If the list is empty add the node
+            //if (head == null)
+            //    head = nodeToAdd;
+            ////If the index is 0 replace the head
+            //else if (index == 0)
+            //{
+            //    nodeToAdd.Next = head;
+            //    head = nodeToAdd;
+            //}
+            //else 
+            //    try
+            //    {
+            //        while (count != index)
+            //        {
+            //            if (pointer == null)
+            //            {
+            //                throw new ArgumentOutOfRangeException();
+            //            }
+            //            count++;
+            //            pointer = pointer.Next;
+
+            //        }
+            //        nodeToAdd.Next = pointer.Next;
+            //        pointer.Next = nodeToAdd;
+            //    }
+            //    catch (Exception)
+            //    {
+            //        throw new ArgumentOutOfRangeException();
+            //    }
+            //return head;
+            #endregion
+        }
+
 
         /*****WORKING ON THIS
         public void Reverse()
@@ -245,6 +296,7 @@ namespace LinkedList
         }
         ******/
     }
+
 
     class Node<T>
     {

@@ -18,20 +18,23 @@ namespace CSharp_Coding_Exercises
             //Console.WriteLine(SLLtoString.Stringify(new Node(1, new Node(2, new Node(3)))));
 
             SLinkedList<int> myList = new SLinkedList<int>();
-            //myList.Add(8);
-            //myList.Add(7);
-            //myList.Add(1);
-            //myList.Add(40);
-            //myList.Append(175);
+            myList.Add(8);
+            myList.Add(7);
+            myList.Add(1);
+            myList.Add(40);
+            myList.Append(175);
+
             //myList.Insert(35, 30);
             //myList.SortedInsert(myList.Head, 5);
 
-            myList.Add(1);
-            myList.Add(3);
-            myList.Add(5);
-            myList.Add(6);
+            //myList.Add(1);
+            //myList.Add(3);
+            //myList.Add(5);
+            //myList.Add(6);
 
-            Console.WriteLine(myList.GetNth(myList.Head, 100));
+
+            //Console.WriteLine(myList.InsertAt(null, 0, 12).ToString());
+            //Console.WriteLine(myList.GetNth(myList.Head, 100));
             //Console.WriteLine(myList.ToString());
 
             //Console.WriteLine(myList.Count(myList.Head, value => value %2 != 0));
