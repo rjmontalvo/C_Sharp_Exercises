@@ -17,12 +17,13 @@ namespace CSharp_Coding_Exercises
 
             //Console.WriteLine(SLLtoString.Stringify(new Node(1, new Node(2, new Node(3)))));
 
-            SLinkedList<int> myList = new SLinkedList<int>();
-            myList.Add(8);
-            myList.Add(7);
-            myList.Add(1);
-            myList.Add(40);
-            myList.Append(175);
+            //SLinkedList<int> myList = new SLinkedList<int>();
+
+            //myList.Add(8);
+            //myList.Add(7);
+            //myList.Add(1);
+            //myList.Add(40);
+            //myList.Append(175);
 
             //myList.Insert(35, 30);
             //myList.SortedInsert(myList.Head, 5);

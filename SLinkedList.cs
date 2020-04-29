@@ -276,7 +276,68 @@ namespace LinkedList
             #endregion
         }
 
+        public static Node<int> MergeTwoLists(Node<int> l1, Node<int> l2)
+        {
+            //Check edge cases
+            if (l1 == null && l2 == null)
+                return null;
+            else if (l1 != null && l2 == null)
+                return l1;
+            else if(l1 == null && l2 != null)
+                return l2;
 
+            //Create Pointers
+            var p1 = l1;
+            var p2 = l2;
+            var p3 = l1;
+
+            //point p3 to the lowest node
+            if (p1.Data <= p2.Data)
+            {
+                p3 = p1;
+                p1 = p1.Next;
+            }
+            else
+            {
+                p3 = p2;
+                p2 = p2.Next;
+            }
+
+            //Create pointer for result
+            var p4 = p3;
+
+            //iterate through each list
+            while (p1 != null && p2 != null)
+            {
+
+                //point p3 to the lowest node
+                if (p1.Data <= p2.Data)
+                {
+                    p4.Next = p1;
+                    p1 = p1.Next;
+                    p4 = p4.Next;
+                }
+                else
+                {
+                    p4.Next = p2;
+                    p2 = p2.Next;
+                    p4 = p4.Next;
+                }
+
+            }
+            
+            //If one list goes null, add the rest
+            if(p1 == null)
+            {
+                p4.Next = p2;
+            }
+            else
+            {
+                p4.Next = p1;
+            }
+            return p3;
+
+        }
         /*****WORKING ON THIS
         public void Reverse()
         {
